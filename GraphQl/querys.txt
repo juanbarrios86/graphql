@@ -1,0 +1,25 @@
+query getProducts {
+  Products {
+    title
+    thumbnail
+    price
+    id
+  }
+}
+
+query getProduct {
+  Product(id: "627031793f5576eb9b607db8") {
+    title
+    price
+    thumbnail
+  }
+}
+
+mutation CreateProduct {
+  CreateProduct(title: "probando graphql", thumbnail: "asdf.com", price: 22222.25) {
+    title,
+    thumbnail,
+    price,
+    id
+  }
+}
